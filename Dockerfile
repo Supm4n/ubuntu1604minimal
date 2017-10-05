@@ -26,7 +26,6 @@ numpy \
 vim \
 openssl \
 						
-
 RUN pip install —upgrade pip
 RUN pip install pandas numpy
 RUN pip install scipy
@@ -39,3 +38,8 @@ RUN cd .vim
 RUN git submodule init
 RUN git submodule update
 
+WORKDIR "/root"
+RUN git clone http://github.com/supm4n/zshrc.git 
+RUN ln -s zshrc/.zshrc .zshrc
+
+CMD /usr/bin/zsh
