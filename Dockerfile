@@ -27,6 +27,15 @@ RUN apt-get install -y \
 						openssl \
 						
 
-pip install —upgrade pip
-pip install pandas numpy
-pip install scipy
+RUN pip install —upgrade pip
+RUN pip install pandas numpy
+RUN pip install scipy
+
+WORKDIR "/root"
+RUN git clone http://github.com/supm4n/dotvim.git .vim
+RUN ln -s .vim/.vimrc .vimrc
+RUN ln -s .vim/.vimrc .gvimrc
+RUN cd .vim
+RUN git submodule init
+RUN git submodule update
+
