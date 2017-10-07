@@ -28,6 +28,7 @@ openssl \
 RUN pip install —upgrade pip
 RUN pip install pandas numpy
 RUN pip install scipy
+RUN pip install ipython
 
 WORKDIR "/root"
 RUN git clone http://github.com/supm4n/dotvim.git .vim
