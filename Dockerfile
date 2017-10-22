@@ -24,6 +24,7 @@ pandas \
 numpy \
 vim \
 openssl \
+telnet
 						
 RUN pip install —upgrade pip
 RUN pip install pandas numpy
