@@ -24,7 +24,10 @@ pandas \
 numpy \
 vim \
 openssl \
-telnet
+ipython \
+telnet \
+tmux \
+iputils-ping
 						
 RUN pip install —upgrade pip
 RUN pip install pandas numpy
