@@ -15,16 +15,19 @@ Dockerfile building an UBUNTU 16.04 server with the packages below :
 - vim 
 - wget 
 - zip
-- numpy
 - python
 - ffmpeg
-- ruby
+- zsh
 - git
 - pandas
+- numpy
 - vim
 - openssl
-- scipy
-- pyaudio
+- ipython
+- telnet
+- tmux
+- iputils-ping
+
 
 ## License
 
